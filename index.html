@@ -12,13 +12,15 @@
 		<link rel="shortcut icon" href="images/fav icon.png">
         <!--js-link---------->
         <script src="js/JQuery3.3.1.js"></script>
-        <script src="js/lightslider.js"></script>
+		<script src="js/lightslider.js"></script>
+		<script src="js/loading.js"></script>
         <!--using FontAwesome--------------->
 <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
         
     </head>
 
     <body>
+		
             <nav>
                 <!--logo--------------->
                 <a href="#" class="logo">
@@ -271,6 +273,8 @@
 				</div>
 			</div>
 		</li>
+
+
 		<li class="item-a">
 			<div class="latest-box">
 				<!--img-------->
@@ -502,6 +506,16 @@
             } 
         });  
       });
-    </script>
+	</script>
+	<div id="overlay">
+		<div class="spinner"></div> 
+		</div>
+	<script>
+		var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+	</script>
     </body>
 </html>
